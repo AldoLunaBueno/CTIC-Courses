@@ -134,9 +134,9 @@ Ofrece el mayor nivel de control sobre los recursos informáticos, como conexió
 
 ### Infraestructura global
 
-![](2023-08-21-14-44-28.png)
+![](sources/2023-08-21-14-44-28.png)
 
-![](2023-08-21-21-44-57.png)
+![](sources/2023-08-21-21-44-57.png)
 
 Actualmente, la infraestructura de AWS está distribuida por el mundo en 32 regiones y 102 zonas de disponibilidad (AZ). Una región de AWS es un área geográfica que contiene varias AZ (al menos 3). Las AZ son ubicaciones aisladas que tienen uno o más centros de datos (hasta 8). Los centros de datos son edificios que tienen entre 50000 y 80000 servidores físicos.
 
@@ -157,12 +157,12 @@ Además, el cliente puede seleccionar la región geográfica en la que más le c
 2016-2020: Se lanzan servicios de cómputo sin servidores, como AWS Lambda, Azure Functions y Google Cloud Run, que permiten ejecutar código sin necesidad de administrar ni aprovisionar servidores. También se lanzan servicios híbridos y multicloud, como AWS Outposts y Azure Arc, que permiten extender y administrar los recursos de nube desde cualquier lugar.
 
 
-![](2023-08-18-21-02-17.png)
+![](sources/2023-08-18-21-02-17.png)
 
 
 **1960**
 
-![](2023-08-23-00-44-35.png)
+![](sources/2023-08-23-00-44-35.png)
 - La idea de computadoras compartidas surge en torno a 1960.
 - Las computadoras compartidas en sus comienzos eran máquinas muy grandes y costosas llamadas mainframes o centrales que podían ejecutar varias tareas al mismo tiempo, pero con una velocidad y capacidad muy limitadas.
 - Las computadoras comparatidas no se desarrollaron mucho hasta los años 90.
@@ -170,7 +170,7 @@ Además, el cliente puede seleccionar la región geográfica en la que más le c
   
 **1999**
 
-![](2023-08-22-23-52-26.png)
+![](sources/2023-08-22-23-52-26.png)
 - Salesforce fue fundada en 1999.
 - Salesforce demostró que se puede ofrecer un servicio de calidad a  través de Internet, siendo una de las primeras en ofrecer un servicio del modelo SaaS.
 - Salesforce se encarga del CRM (Client Relation Management) de otras empresas. El CRM mejora los procesos de ventas, marketing, sevicio al cliente, gestión de proyectos, análisis de datos y otros aspectos del negocio.
@@ -180,7 +180,7 @@ Además, el cliente puede seleccionar la región geográfica en la que más le c
 
 **2002**
 
-![](2023-08-22-23-53-31.png)
+![](sources/2023-08-22-23-53-31.png)
 - AWS fue fundada en 2002.
 - AWS es una empresa filial de Amazon (la empresa matriz o holding que gestiona AWS).
 - AWS es una plataforma de servicios de computación en la nube.
@@ -189,7 +189,7 @@ Además, el cliente puede seleccionar la región geográfica en la que más le c
   
 **2006**
 
-![](2023-08-22-23-46-32.png)
+![](sources/2023-08-22-23-46-32.png)
 - Google Apps se lanzó en 2006.
 - Google Apps es un conjunto de aplicaciones de productividad y colaboración en la nube ofrecido por Google. 
 - Google Apps se lanzó como una versión para empresas de los servicios que ya ofrecía gratis: Gmail, Google Calendar, Google Docs.
@@ -198,11 +198,11 @@ Además, el cliente puede seleccionar la región geográfica en la que más le c
 - Google Apps cambió su nombre a Google Workspace en 2020.
 
 <br></br>
-![](2023-08-18-21-02-35.png)
+![](sources/2023-08-18-21-02-35.png)
 
 **2008**
 
-![](2023-08-23-00-37-38.png)
+![](sources/2023-08-23-00-37-38.png)
 - OpenNebula lanza su primera versión en 2008.
 - OpenNebula fue creada en 2005 como un proyecto de investigación de la Universidad Complutense de Madrid.
 - OpenNebula es una plataforma de computación en la nube de código abierto.
@@ -211,13 +211,13 @@ Además, el cliente puede seleccionar la región geográfica en la que más le c
 
 **2009**
 
-![](2023-08-23-00-40-16.png)
+![](sources/2023-08-23-00-40-16.png)
 - Microsoft lanza Azure en 2009.
 - Azure es una plataforma de computación en la nube que ofrece los tres modelos de servicios.
 
 **2010**
 
-![](2023-08-23-00-37-07.png)
+![](sources/2023-08-23-00-37-07.png)
 - OpenStack fue creada en 2010 por Rackspace y la NASA.
 - OpenStack es una plataforma de cómputo en la nube de código abierto, al igual que OpenNebula.
 - Tanto OpenStack como OpenNebula te permiten construir y gestionar infraestructuras de nube privada, pública e híbrida.
@@ -238,18 +238,18 @@ Además, el cliente puede seleccionar la región geográfica en la que más le c
 - AWS comenzó a ofrecer servicios de contendores desde 2014, cuando lanzó Amazon ECS (Elastic Container Service).
 
 <br></br>
-![](2023-08-18-21-02-58.png)
+![](sources/2023-08-18-21-02-58.png)
 
 **2014**
 
-![](2023-08-23-00-48-23.png)
+![](sources/2023-08-23-00-48-23.png)
 - La CNCF se crea en 2014 (Cloud Native Computing Foundation).
 - Antes de la CNCF, el cómputo en la nube era más heterogéneo y fragmentado. Había distintos proveedores, plataformas y estándares, y eso dificultaba la interoperabilidad de las aplicaciones.
 - La CNCF promovió una mayor colaboración y armonía entre los diferentes actores del cómputo en la nube.
 
 **2015**
 
-![](2023-08-23-01-10-14.png)
+![](sources/2023-08-23-01-10-14.png)
 - Microsoft lanza Windows Server Containers
 - Windows Server Containers se integra en el sistema operativo Windows Server 2016, como lo cuentan [en este artículo](https://learn.microsoft.com/en-us/archive/msdn-magazine/2017/april/containers-bringing-docker-to-windows-developers-with-windows-server-containers). 
 - Taylor Brown es la cabeza detrás de proyectos como este, relacionados con la virtualización en Windows.
@@ -260,41 +260,68 @@ Además, el cliente puede seleccionar la región geográfica en la que más le c
 
 Gartner es una consultora internacional especializada en tecnología.
 
-![](2023-08-18-21-07-41.png)
+![](sources/2023-08-18-21-07-41.png)
 
-| Critical enablers (9) | Productivity revolution (7) | Smart world (6) | Transparency and privacy (4) |
+| Critical enablers | Productivity revolution | Smart world | Transparency and privacy |
 |:---|:---|:---|:---|
 | **Blockchain** <br/> **Foundation Models** <br/> Hyperautomation in Security <br/> Knowledge graphs <br/> **Hyperscale Edge Computing** <br/> Web3 <br/> **Tokenization** <br/> Neuromorphic Computing <br/> 6G | Edge Computer Vision <br/> **Edge AI** <br/> Model Compression <br/> Synthetic Data <br/> **Intelligent Applications** <br/> Generative AI <br/> Self-Supervised Learning <br/> <br/> <br/> | **Digital Twins** <br/> Multimodal UI <br/> **Smart Space** <br/> Spatial Computing <br/> Digital Human <br/> **Metaverse** <br/> <br/> <br/> <br/> | Human-Centered AI <br/> Digital Ethics <br/> Decentralizaed Identity <br/> Responsible AI <br/> <br/> <br/> <br/> <br/> <br/> |
 
-**Las 4 tendencias**
+**Las 4 tendencias tecnológicas**
 
-- Critical enablers
+- Critical Enablers (CE)
 
+    Son tecnologías que funcionan como un pegamento para unir otras tecnologías emergentes. También remodelan las prácticas, procesos, modelos y métodos existentes en los mercados donde se aplican.
 
+- Productivity Revolution (PR)
 
-- Productivity Revolution
+    Son tecnologías que impulsan la productividad de las personas, instituciones y máquinas, promueven la innovación, y permiten usar mejor los recursos.
 
+- Smart World (SW)
 
-
-- Smart World
-
-
+    Son tecnologías que crean un mundo más inteligente, conectado y adaptable. Con tecnologías de smart world, los entornos físicos y virtuales integran datos, análisis, sensores y dispositivos.
 
 - Transparency and Privacy
 
-**Las 9 tecnologías más importantes**
+    Son tecnologías que promueven la transparencia y la privacidad de los datos, al permitir el control, el consentimiento y la verificación de los usuarios y las organizaciones.
 
-Blockchain
-Foundational Models
-Tokenization
-Hyperscale Edge Computing
 
-Edge AI
-Intelligent Applications
+**Las 9 tecnologías futuras más importantes** 
 
-Digital Twins
-Smart Space
-Metaverse
+(orden alfabético)
+
+1. Blockchain (CE)
+
+
+
+2. Digital Twins (SW)
+
+    A lo Black Mirror
+
+3. Edge AI (PR)
+   
+
+
+4. Foundational Models (CE)
+
+
+
+5. Hyperscale Edge Computing (CE)
+
+
+
+6. Intelligent Applications (PR)
+
+
+
+7. Metaverse (SW)
+
+
+
+8. Smart Space (SW)
+
+
+
+9.  Tokenization (CE)
 
 
 
@@ -302,7 +329,7 @@ Metaverse
 
 ### ¿Qué se necesita  para tener un Data Center?
 
-![](2023-08-16-16-25-35.png)
+![](sources/2023-08-16-16-25-35.png)
 
 Mucho dinero. ¿Por qué?
 
@@ -331,7 +358,7 @@ Mucho dinero. ¿Por qué?
 
 ### Capex vs Opex
 
-![](2023-08-16-17-39-02.png)
+![](sources/2023-08-16-17-39-02.png)
 
 ## Videos
 
