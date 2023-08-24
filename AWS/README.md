@@ -6,10 +6,14 @@
   - [Tipos de implementación de cómputo en la nube](#tipos-de-implementación-de-cómputo-en-la-nube)
   - [Modelos de servicios](#modelos-de-servicios)
   - [Infraestructura global](#infraestructura-global)
-  - [Historia](#historia)
+  - [Evolución](#evolución)
+    - [Historia](#historia)
+    - [El futuro](#el-futuro)
+- [Semana 1. A lo concreto](#semana-1-a-lo-concreto)
   - [¿Qué se necesita  para tener un Data Center?](#qué-se-necesita--para-tener-un-data-center)
   - [Capex vs Opex](#capex-vs-opex)
-  - [Videos](#videos)
+- [Videos](#videos)
+- [Semana 2. Clase 1](#semana-2-clase-1)
 
 
 ## Semana 1. Introducción
@@ -107,7 +111,7 @@ Se nos explican 6 ventajas principales:
 
 **On-premises**
 
-La palabra _premises_ significa 'instalaciones'. Se trata de la temida implementación de un centro de datos completo para soportar nuestra aplicación.
+La palabra _premises_ significa 'instalaciones'. Se trata de la temida e infame implementación de un centro de datos completo para soportar nuestra aplicación, con todas las complicaciones y gastos de tiempo y dinero que ello supone.
 
 **Híbrido**
 
@@ -130,33 +134,171 @@ Ofrece el mayor nivel de control sobre los recursos informáticos, como conexió
 
 ### Infraestructura global
 
+![](2023-08-21-14-44-28.png)
+
+![](2023-08-21-21-44-57.png)
+
 Actualmente, la infraestructura de AWS está distribuida por el mundo en 32 regiones y 102 zonas de disponibilidad (AZ). Una región de AWS es un área geográfica que contiene varias AZ (al menos 3). Las AZ son ubicaciones aisladas que tienen uno o más centros de datos (hasta 8). Los centros de datos son edificios que tienen entre 50000 y 80000 servidores físicos.
 
 Las regiones están completamente aisladas y separadas entre sí, y en cada AZ hay uno o más centros de datos en instalaciones independientes, y con líneas eléctricas y conexiones de red redundantes. Además, las AZ son zonas de error independiente. Todo esto se hace para aumentar la tolerancia a cualquier fallo. 
 
 Además, el cliente puede seleccionar la región geográfica en la que más le conviene aumentar el rendimiento disminuyendo la latencia de red.
 
-### Historia
+### Evolución
+
+#### Historia
+
+1960s: Se inicia el desarrollo de Internet como una red de comunicación entre organismos del gobierno de Estados Unidos.
+1970s: Se introduce el concepto de máquina virtual, que permite crear entornos aislados y configurables dentro de un mismo servidor.
+1990s: Se populariza el uso de Internet como una plataforma para ofrecer servicios y aplicaciones a los usuarios finales.
+2000s: Se consolidan los proveedores de servicios de nube, como Amazon, Google y Microsoft, que ofrecen infraestructura, plataformas y software como servicio a través de Internet.
+2010s: Se desarrollan tecnologías de contenedores y orquestación, como Docker y Kubernetes, que permiten empaquetar, desplegar y gestionar aplicaciones de forma más ágil y eficiente en la nube.
+2015: Se funda la Cloud Native Computing Foundation (CNCF), una organización que promueve el desarrollo y la adopción de tecnologías de cómputo en la nube nativas, como Kubernetes, Prometheus, Istio y muchos más.
+2016-2020: Se lanzan servicios de cómputo sin servidores, como AWS Lambda, Azure Functions y Google Cloud Run, que permiten ejecutar código sin necesidad de administrar ni aprovisionar servidores. También se lanzan servicios híbridos y multicloud, como AWS Outposts y Azure Arc, que permiten extender y administrar los recursos de nube desde cualquier lugar.
+
 
 ![](2023-08-18-21-02-17.png)
+
+
+**1960**
+
+![](2023-08-23-00-44-35.png)
+- La idea de computadoras compartidas surge en torno a 1960.
+- Las computadoras compartidas en sus comienzos eran máquinas muy grandes y costosas llamadas mainframes o centrales que podían ejecutar varias tareas al mismo tiempo, pero con una velocidad y capacidad muy limitadas.
+- Las computadoras comparatidas no se desarrollaron mucho hasta los años 90.
+- During 1961, John MacCharty delivered his speech at MIT that “Computing Can be sold as a Utility, like Water and Electricity.”
+  
+**1999**
+
+![](2023-08-22-23-52-26.png)
+- Salesforce fue fundada en 1999.
+- Salesforce demostró que se puede ofrecer un servicio de calidad a  través de Internet, siendo una de las primeras en ofrecer un servicio del modelo SaaS.
+- Salesforce se encarga del CRM (Client Relation Management) de otras empresas. El CRM mejora los procesos de ventas, marketing, sevicio al cliente, gestión de proyectos, análisis de datos y otros aspectos del negocio.
+- Salesforce ofrece soluciones para el sector financiero, sanitario, educativo, manufacturero, etc. 
+- Algunas soluciones importantes: Sales Cloud, Marketing Cloud, Platform, MuleSoft, Tableau. Por ejemplo, Sales Cloud gestiona el ciclo de ventas (_sales cycle_ en inglés), desde la captación de clientes potenciales hasta el cierre de acuerdos.
+- Algunas empresitas que son clientes de Salesforce: Spotify, Amazon, Adidas, Coca-Cola.
+
+**2002**
+
+![](2023-08-22-23-53-31.png)
+- AWS fue fundada en 2002.
+- AWS es una empresa filial de Amazon (la empresa matriz o holding que gestiona AWS).
+- AWS es una plataforma de servicios de computación en la nube.
+- Salesforce migró su infraestructura a la nube de AWS en 2003, y fue una de las primeras. Desde entonces, AWS y Salesforce tienen una alianza estratégica mediante la cual ofrecen soluciones conjuntas a sus clientes.
+- AWS lanzó sus primeros productos en la nube en 2006 (productos como S3 o EC2).
+  
+**2006**
+
+![](2023-08-22-23-46-32.png)
+- Google Apps se lanzó en 2006.
+- Google Apps es un conjunto de aplicaciones de productividad y colaboración en la nube ofrecido por Google. 
+- Google Apps se lanzó como una versión para empresas de los servicios que ya ofrecía gratis: Gmail, Google Calendar, Google Docs.
+- Google Apps fue añadiendo nuevas apps: Google Drive, Google Meet, Google Sites.
+- Entonces, Google Apps ofrece SaaS. Pero también permite a los desarrolladores crear y ejecutar sus propias aplicaciones usando API.Por eso Google Apps también ofrece PaaS. Lo que no ofrece es IaaS. Google crea Google Coud Platform para ofrecer IaaS, y todo lo demás.
+- Google Apps cambió su nombre a Google Workspace en 2020.
+
+<br></br>
 ![](2023-08-18-21-02-35.png)
+
+**2008**
+
+![](2023-08-23-00-37-38.png)
+- OpenNebula lanza su primera versión en 2008.
+- OpenNebula fue creada en 2005 como un proyecto de investigación de la Universidad Complutense de Madrid.
+- OpenNebula es una plataforma de computación en la nube de código abierto.
+
+
+
+**2009**
+
+![](2023-08-23-00-40-16.png)
+- Microsoft lanza Azure en 2009.
+- Azure es una plataforma de computación en la nube que ofrece los tres modelos de servicios.
+
+**2010**
+
+![](2023-08-23-00-37-07.png)
+- OpenStack fue creada en 2010 por Rackspace y la NASA.
+- OpenStack es una plataforma de cómputo en la nube de código abierto, al igual que OpenNebula.
+- Tanto OpenStack como OpenNebula te permiten construir y gestionar infraestructuras de nube privada, pública e híbrida.
+- OpenStack vs. OpenNebula:
+  - Arquitectura: OpenStack tiene varios subsistemas gestionados por 14 subproyectos distintos, mientras que OpenNebula ofrece una plataforma integrada.
+  - Modelo de gobernancia: OpenStack está impulsado por las necesidades de las empresas que participaron en su desarrollo, mientras que OpenNebula está impulsado por las necesidades de los usuarios finales.
+  - Experiencia de usuario: OpenStack requiere una gran cantidad de tiempo y recursos para instalar, configuarar y mantener la plataforma, mientras que OpenNebula ofrece una solución que se puede instalar en minutos y es fácil de usar.
+  - Compatibilidad: OpenStack tiene una mayor compatibilidad con otros proovedores de nube pública, como AWS.
+  - Comunidad: OpenStack tiene comunidad más grande.
+  - Variedad: OpenStack ofrece más opciones y funcionalidades para construir y gestionar la nube.
+
+**2013**
+
+- Los contenedores se popularizan gracias al lanzamiento de Docker.
+- Los contenedores son entornos que empaquetan el código y todas sus dependencias para que puedan ejecutarse de forma aislada y consistente. Los contenedores les resolvieron la vida a los desarrolladores que tenían el famoso problema «en mi máquina sí funcionaba».
+- Antes de los contenedores, el cómputo en la nube se basaba en VM (máquinas virtuales). Las VM ofrecían seguridad y aislamiento, pero por contra eran complejas, rígidas y consumían muchos recursos.
+- Los contenedores han permitido una mayor agilidad y flexibilidad en el desarrollo de aplicaciones en la nube.
+- AWS comenzó a ofrecer servicios de contendores desde 2014, cuando lanzó Amazon ECS (Elastic Container Service).
+
+<br></br>
 ![](2023-08-18-21-02-58.png)
 
-1970s IBM lanza sus VM.
-1990s Las VM se vuelven populares.
-1999 Salesforce es uno de los pioneros en computación en la nube.
-2002 Amazon lanza AWS.
-2008 Microsoft lanza Azure.
-2008 La NASA desarrolla las primeras nubes privadas e híbridas open-source.
-2010 OpenStack hace una nube privada open-source DIY que se vuelve popular.
-2011 Nubes híbridas
-2013 Multinubes
+**2014**
 
-**¿Qué se viene?**
+![](2023-08-23-00-48-23.png)
+- La CNCF se crea en 2014 (Cloud Native Computing Foundation).
+- Antes de la CNCF, el cómputo en la nube era más heterogéneo y fragmentado. Había distintos proveedores, plataformas y estándares, y eso dificultaba la interoperabilidad de las aplicaciones.
+- La CNCF promovió una mayor colaboración y armonía entre los diferentes actores del cómputo en la nube.
 
-Gartner es una consultora insternacional especializada en tecnología.
+**2015**
+
+![](2023-08-23-01-10-14.png)
+- Microsoft lanza Windows Server Containers
+- Windows Server Containers se integra en el sistema operativo Windows Server 2016, como lo cuentan [en este artículo](https://learn.microsoft.com/en-us/archive/msdn-magazine/2017/april/containers-bringing-docker-to-windows-developers-with-windows-server-containers). 
+- Taylor Brown es la cabeza detrás de proyectos como este, relacionados con la virtualización en Windows.
+
+
+
+#### El futuro
+
+Gartner es una consultora internacional especializada en tecnología.
 
 ![](2023-08-18-21-07-41.png)
+
+| Critical enablers (9) | Productivity revolution (7) | Smart world (6) | Transparency and privacy (4) |
+|:---|:---|:---|:---|
+| **Blockchain** <br/> **Foundation Models** <br/> Hyperautomation in Security <br/> Knowledge graphs <br/> **Hyperscale Edge Computing** <br/> Web3 <br/> **Tokenization** <br/> Neuromorphic Computing <br/> 6G | Edge Computer Vision <br/> **Edge AI** <br/> Model Compression <br/> Synthetic Data <br/> **Intelligent Applications** <br/> Generative AI <br/> Self-Supervised Learning <br/> <br/> <br/> | **Digital Twins** <br/> Multimodal UI <br/> **Smart Space** <br/> Spatial Computing <br/> Digital Human <br/> **Metaverse** <br/> <br/> <br/> <br/> | Human-Centered AI <br/> Digital Ethics <br/> Decentralizaed Identity <br/> Responsible AI <br/> <br/> <br/> <br/> <br/> <br/> |
+
+**Las 4 tendencias**
+
+- Critical enablers
+
+
+
+- Productivity Revolution
+
+
+
+- Smart World
+
+
+
+- Transparency and Privacy
+
+**Las 9 tecnologías más importantes**
+
+Blockchain
+Foundational Models
+Tokenization
+Hyperscale Edge Computing
+
+Edge AI
+Intelligent Applications
+
+Digital Twins
+Smart Space
+Metaverse
+
+
+
+## Semana 1. A lo concreto
 
 ### ¿Qué se necesita  para tener un Data Center?
 
@@ -191,8 +333,17 @@ Mucho dinero. ¿Por qué?
 
 ![](2023-08-16-17-39-02.png)
 
-### Videos
+## Videos
 
 Intro to AWS - The Most Important Services To Learn
 
 https://www.youtube.com/watch?v=FDEpdNdFglI
+
+
+## Semana 2. Clase 1
+
+En cuanto a la facturación en la nube, no se habla de cotizaciones, sino de estimaciones.
+
+Aprende subneting. En la nube se ven redes muy elaboradas.
+
+El Anti-DDOS separa las conexiones legítimas de las maliciosas. métodos de identificación antbots.
