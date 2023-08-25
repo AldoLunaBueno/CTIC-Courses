@@ -291,21 +291,37 @@ Gartner es una consultora internacional especializada en tecnología.
 
 1. Blockchain (CE)
 
-
+   - El blockchain es un tecnología que permite crear redes descentralizadas y seguras. Estas redes se basan en cadenas de bloques, que son registros inmutables y verificables de las transacciones que ocurren en la red.
+   - Con las redes de blockchain, los participantes pueden intercambiar información o valor sin intermediarios.
+   - Aunque el blockchain se creó en 2008 y se le ha dado varios usos desde entonces, como los Bitcoin o NFT, aún no alcanza su máximo potencial.
+   - El blockchain aplicado a las cadenas de suminitro podría ser una de las mayores disrupciones, y beneficiará tanto a proveedores como a consumidores porque aumentará la eficiencia (contratos inteligentes), la trazabilidad y la confianza (registro inmutable y verifibable por todos).
 
 2. Digital Twins (SW)
+
+    - Un digital twin copia cómo es y cómo funciona algo real. Es una representación virtual de un objeto, servicio o sistema real, que se actualiza continuamente con los datos y las condiciones del mundo real.
+    - Un digital twin nos permite experimentar con diferentes escenarios y cambios, y luego aplicar las mejoras o soluciones en el mundo real.
 
     A lo Black Mirror
 
 3. Edge AI (PR)
    
+    - 
 
+4. Foundation Models (CE)
 
-4. Foundational Models (CE)
-
-
+    - Un modelo fundacional es una inteligencia artificial que puede adaptarse a diferentes tareas y dominios gracias a que aprende de grandes cantidades de datos no etiquetados. 
+    
+    - Estos modelos pueden generar conocimiento, lenguaje, imágenes, sonido o código. Un ejemplo de esto es GPT-3.
 
 5. Hyperscale Edge Computing (CE)
+
+    - Es una arquitectura de computación distribuida que aprovecha los recursos de hardware y software del borde de la red, es decir, cerca de las fuentes de datos y los usuarios finales.
+
+    - Se utilizará para soportar las demandas de servicios en la nube cada vez mayores. Será utilizado especialmente donde se requiera baja latencia, alta disponibilidad y gran capacidad de procesamiento.
+
+    https://www.youtube.com/watch?v=aKoIPbb_rCs
+
+    https://www.e-spincorp.com/from-edge-computing-to-hyperscale-edge-computing/
 
 
 
@@ -315,7 +331,8 @@ Gartner es una consultora internacional especializada en tecnología.
 
 7. Metaverse (SW)
 
-
+    - El metaverso un mundo virtual conectado a la Internet. En el metaverso los usuarios pueden interactuar entre sí y con el contenido digital del entorno usando realidad virtual o realidad aumentada.
+    - En el metaverso podríamos jugar a juegos inmersivos con amigos alrededor del mundo, aprender nuevas habilidades como hablar en público o un nuevo lenguaje mediante escenarios simulados, o colaborar con compañeros de trabajo de una forma más cercana a pesar de la distancia.
 
 8. Smart Space (SW)
 
@@ -323,6 +340,8 @@ Gartner es una consultora internacional especializada en tecnología.
 
 9.  Tokenization (CE)
 
+    - La tokenización es el proceso de convertir las cosas en tokens digitales.
+    - La tokenización del dinero es muy interesante.
 
 
 ## Semana 1. A lo concreto
