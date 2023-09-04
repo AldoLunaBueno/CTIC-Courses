@@ -12,6 +12,7 @@
 - [Semana 1. A lo concreto](#semana-1-a-lo-concreto)
   - [¿Qué se necesita  para tener un Data Center?](#qué-se-necesita--para-tener-un-data-center)
   - [Capex vs Opex](#capex-vs-opex)
+- [Servicios de AWS](#servicios-de-aws)
 - [Videos](#videos)
 - [Semana 2. Clase 1](#semana-2-clase-1)
 
@@ -81,7 +82,7 @@ Se nos explican 6 ventajas principales:
 
     No tienes que gastar en costosos servidores, firewalls, UPS y demás equipos solo para darte cuenta de que quizás la aplicación no era muy buena idea. Con la nube pagas solo por los recursos que usas, y solo en la medida en que los usas.
 
-2. Te beneficias de la economía de escala
+2. Te beneficias de la economía de escala masiva
     
     Un proveedor de servicios en la nube como AWS ha optimizado sus instalaciones y sus gastos para ofrecer de forma competitiva recursos TI a millones de usuarios y empresas de todo el mundo. Por eso los costos variables que piden son bajos.
 
@@ -378,6 +379,134 @@ Mucho dinero. ¿Por qué?
 ### Capex vs Opex
 
 ![](sources/2023-08-16-17-39-02.png)
+
+
+
+## Servicios de AWS
+
+https://calculator.aws/#/addService
+
+| Cómputo | Almacenamiento | Transferencia | Networking | Base de datos | Administración |
+|:---|:---|:---|:---|:---|:---|
+| EC2 <br/> ECS <br/> EKS <br/> Fargate <br/> Lambda <br/> Elastic Beanstalk | S3 <br/> Glacier <br/> EBS <br/> EFS <br/> FSx | Direct Connect <br/> Snowball <br/> STA <br/> Storage Gateway <br/> Kinesis Firehose | VPC <br/>  ELB <br/> R53 <br/>  | RSD <br/> DDB <br/> Aurora   | CloudFormation <br/> ClouWatch <br/> CloudTrail <br/> Config  |
+
+**Cómputo**
+
+- EC2
+    - Elastic Computer Cloud
+    - Servicio de instancia de cómputo
+    - EC2 te permite lanzar y administrar servidores virtuales (instancias) en la nube. 
+    - Te aporta capacidad informática para que puedas ejecutar tus cargas de trabajo.
+- ECS
+  - Elastic Container Solution
+  - Servicio de contenedores.
+  - ECS es un  que te permite ejecutar aplicaciones en contenedores Docker en la nube.
+  - ECS te permite administrar y escalar tus contenedore.
+- EKS
+  - Elastic Kubernetes Service
+  - Servicio de contenedores.
+  - EKS es un servicio de Kubernetes totalmente administrado que te permite ejecutar aplicaciones en contenedores en la nube.
+- Fargate
+  - Servicio de contenedores.
+  - Fargate es el motor informático de ECS.
+  - Te permite ejecutar aplicaciones en contenedores sin preocuparte del aprovisionamniento y la administración de servidores.
+  - Fargate aprovisiona, configura y escala los clusteres de máquinas virtuales para ejecutar los contenedores, todo sin que tengas que pensar en ello.
+- Lambda
+  - Servicio de cómputo sin servidor (completamente administrado).
+  - Solo cargas tu código y Lambda hará todo lo necesario para ejecutarlo y escalarlo con alta disponibilidad.
+  - Puedes configurar Lambda para ejecutar código automáticamente en respuesta a eventos.
+- Elastic Beanstalk
+  - Servicio de cómputo sin servidor (completamente administrado).
+  - Elastic Beanstalk implementa y escala aplicaciones y servicios web desarrollados con Java, .NET, Node.js, Python, Ruby, Go y Docker en servidores familiares, como Apache o Nginx.
+  - Elastic se encarga de la implementación automáticamente, desde el aprovisionamiento de capacidad y balanceador de carga hasta el escalado y el monitoreo del estado de las aplicaciones.
+  - Esto no quita que se pueda acceder a los recursos subyacentes también.
+
+**Almacenamiento**
+
+- S3
+  - Simple Storage Service
+  - Servicio de almacenamiento de objetos.
+  - Con S3 almacenas y recuperas datos en cualquier momento.
+- Glacier
+  - Servicio de almacenamiento de objetos.
+  - Con Glacier almacenas datos a los que no necesitas acceder con frecuencia.
+  - Almacenas datos a largo plazo.
+- EBS
+  - Elastic Block Storage
+  - Servicio de almacenamiento de bloques.
+  - Con EBS creas volúmenes de almacenamiento para adjuntarlos a instancias EC2.
+  - EBS almacena datos persistentes para tus instancias de EC2.
+- EFS
+  - Elastic File System
+  - Servicio de almacenamiento de archivos.
+  - Completamente administrado.
+  - Los sistemas de archivos de EFS son escalables y accesibles desde múltiples instancias EC2.
+- FSx
+  - Servicio de almacenamiento de archivos.
+  - Completamente administrado.
+  - Los sistemas de archivos de FSx son escalables y accesibles desde múltiples instancias EC2
+
+> La principal diferencia entre EFS y FSx es:
+    - EFS soporta Linux (compatible con el protocolo NFSv4).
+    - FSx soporta Windows (compatible con los protocolos SMB y Lustre).
+
+**Tranferencia de datos**
+
+- DC
+  - Direct Connect
+  - Servicio de transferencia de datos
+  - Direct Connect te permite establecer una conexión dedicada y privada entre AWS y tu centro de datos, tus instalaciones locales.
+  - La conexión dedicada no se establece a través de Internet.
+  - Direct Connect enlaza tu red con una ubicación de Direct Connect a través de un cable de fibra óptica Ethernet estándar.
+  - El cable conecta tu router con un router de Direct Connect.
+- Snowball
+- STA
+- SG
+- KDF
+
+**Networking**
+
+- VPC
+- ELB
+- Route 53
+  - 
+
+**Base de datos**
+
+- RDS
+  - Relational Database Storage
+- DDB
+- Aurora
+  - 
+- ElastiCache
+
+**Administración**
+- CloudFormation
+  - Permite crear y administrar recursos AWS de forma predecible y consistente.
+  - La infraestructura se define y se implementa a partir de archivos de código.
+  - La infraestructura se define en JSON o YAML, por lo que puede llegar a ser engorroso. Por eso existe el servicio CDK, que permite definir realmente la infraestructura con código.
+- CloudWatch
+  - Servicio de monitoreo.
+  - Monitorea los recursos de AWS.
+  - Con Cloud Watch puedes ver las métricas de cualquiera de tus servicios.
+  - Puedes detectar y solucionar problemas.
+  - Puedes establecer alarmas y reaccionar automáticamente a cambios en tus recursos de AWS.
+- CloudTrail
+  - Servicio de monitoreo
+  - Monitorea el registro de eventos en tu cuenta de AWS.
+  - CloudTrail audita tus recursos.
+  - CloudTrail te permite saber quién hizo un cambio, cuándo lo hizo y dónde lo hizo (qué recurso cambió), así como asegurar el cumplimiento de las políticas acerca del uso de los recursos.
+- Config
+  - Servicio de monitoreo
+  - Config se centra en cómo ha cambiado el recurso.
+
+**Seguridad, identidad y conformidad**
+- IAM
+- WAF
+- Cognito
+- Detective
+- Inspector
+- Shield
 
 ## Videos
 
